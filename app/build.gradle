@@ -29,6 +29,7 @@ dependencies {
     implementation project(':unionpay')
     implementation project(':alipay')
     implementation project(':wechatpay')
+    //由于微信有个jar包和友盟有冲突，所以wechatpay采用compileOnly，所以如果没有使用友盟，需要额外依赖此包
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.3.1'
 //    compile 'com.xgr.easypay:EasyPay:1.0.4'
 //    compile 'com.xgr.easypay:alipay:1.0.4'
