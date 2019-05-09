@@ -30,6 +30,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.+'
     testImplementation 'junit:junit:4.12'
     compileOnly project(':easypay')
-    api files('libs/libammsdk.jar')
-    //api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    //api files('libs/libammsdk.jar')
+    //api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+' //包含统计功能
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
 }
