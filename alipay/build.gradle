@@ -22,12 +22,6 @@ android {
     }
 }
 
-repositories {
-    flatDir {
-        dirs 'libs','../alipay/libs'
-    }
-}
-
 dependencies {
     //implementation fileTree(include: ['*.jar'], dir: 'libs')
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -35,6 +29,6 @@ dependencies {
     })
     implementation 'com.android.support:appcompat-v7:27.+'
     testImplementation 'junit:junit:4.12'
-    api(name:'alipaySdk-15.6.2-20190416165036', ext:'aar')
+    api files('libs/alipaySdk-20180601.jar')
     compileOnly project(':easypay')
 }
