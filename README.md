@@ -40,27 +40,30 @@ EasyPay(易支付)集成并高度封装了Android平台的微信支付，支付�
 ![screenshot.gif](https://github.com/kingofglory/EasyPay/blob/master/screensshot/screenshot.gif)
 
 ##Usage（使用）
+Add the JitPack repository to your build file
+Add it in your root build.gradle at the end of repositories:
 
-###step 1
-
-在build.gradle直接引用 :
-
-	compile 'com.xgr.easypay:EasyPay:1.0.2'
-
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://www.jitpack.io' }
+		}
+	}  
 	
-下载库后作为module导入：
+Add the dependency  
 
-
-    compile project(':easypay')
-
-Or Maven :
-
-	<dependency>
-      <groupId>com.xgr.easypay</groupId>
-      <artifactId>EasyPay</artifactId>
-      <version>1.0.2</version>
-      <type>pom</type>
-    </dependency>
+	dependencies {
+		//基础，必须依赖
+		implementation 'com.github.EthanCo.EasyPay:easypay:1.5.7'
+		//支付宝
+		implementation 'com.github.EthanCo.EasyPay:alipay:1.5.7'
+		//银联
+		implementation 'com.github.EthanCo.EasyPay:unionpay:1.5.7'
+		//微信支付 
+		implementation 'com.github.EthanCo.EasyPay:wechatpay:1.5.7'
+		//使用微信支付需要额外依赖，因为会和友盟jar包冲突，如果已经依赖了友盟，则不需要依赖此包
+		implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.3.1'
+	}
 
 ###step 2
 
@@ -181,13 +184,6 @@ public class WXPayEntryActivity extends WXPayEntryBaseActivity {
 ```
 
 没错，就是这样，这就搞定了。
-
-由于水平有限，难免会有错误。请大家多多指教。
-有任何问题请在issues里面留言交流。[Issues](https://github.com/kingofglory/EasyPay/issues).
-
-##Contact Me（联系我）
-* Email : kingofglory@yeah.net
-* Weibo : [@King的沉积时代](http://weibo.com/u/2255395234)
 
 ##License
 
