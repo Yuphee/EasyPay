@@ -1,4 +1,7 @@
 # EasyPay(易支付)
+forked from [kingofglory/EasyPay](https://github.com/kingofglory/EasyPay)  
+对支付宝、银联、微信支付 SDK 都进行了升级。  
+其中银联、微信支付 SDK升级到了最新(2019年5月)，支付宝SDK升级到2018年6月的版本(之后的版本改用了aar依赖，在library依赖后发布到JItPack中会有些问题，若后期支付宝SDK提供了Maven仓库依赖，可再进行升级)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/mit-license.php)
 
