@@ -13,10 +13,10 @@ package com.xgr.wechatpay.wxpay;
 import android.app.Activity;
 import android.text.TextUtils;
 
-import com.tencent.mm.sdk.constants.Build;
-import com.tencent.mm.sdk.modelpay.PayReq;
-import com.tencent.mm.sdk.openapi.IWXAPI;
-import com.tencent.mm.sdk.openapi.WXAPIFactory;
+import com.tencent.mm.opensdk.constants.Build;
+import com.tencent.mm.opensdk.modelpay.PayReq;
+import com.tencent.mm.opensdk.openapi.IWXAPI;
+import com.tencent.mm.opensdk.openapi.WXAPIFactory;
 import com.xgr.easypay.base.IPayStrategy;
 import com.xgr.easypay.callback.IPayCallback;
 

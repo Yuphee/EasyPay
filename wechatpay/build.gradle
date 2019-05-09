@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.EthanCo'
 android {
     compileSdkVersion 27
 
@@ -28,4 +31,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     compileOnly project(':easypay')
     api files('libs/libammsdk.jar')
+    //api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
 }
