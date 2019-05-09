@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.xgr.easypay.demo"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -27,8 +27,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     implementation project(':easypay')
     implementation project(':unionpay')
-    implementation project(':wechatpay')
     implementation project(':alipay')
+    implementation project(':wechatpay')
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.3.1'
 //    compile 'com.xgr.easypay:EasyPay:1.0.4'
 //    compile 'com.xgr.easypay:alipay:1.0.4'
 //    compile 'com.xgr.easypay:unionpay:1.0.4'
