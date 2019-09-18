@@ -39,6 +39,14 @@ public class UnionPay implements IPayStrategy<UnionPayInfoImpli> {
     public static final String EXTRA_UNIONPAYINFO = "unionpay_info";
     public static IPayCallback sPayCallback;
 
+    /**
+     * 银联App是否安装
+     * @param context
+     */
+    public void isUnionAppInstalled(Context context){
+        UPPayAssistEx.checkWalletInstalled(context);
+    }
+
     @Override
     public void pay(@NonNull Activity activity, @NonNull UnionPayInfoImpli payInfo, IPayCallback payCallback) {
         sPayCallback = payCallback;
