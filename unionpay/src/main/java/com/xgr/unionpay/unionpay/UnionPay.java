@@ -43,8 +43,8 @@ public class UnionPay implements IPayStrategy<UnionPayInfoImpli> {
      * 银联App是否安装
      * @param context
      */
-    public void isUnionAppInstalled(Context context){
-        UPPayAssistEx.checkWalletInstalled(context);
+    public boolean isUnionAppInstalled(Context context){
+        return UPPayAssistEx.checkWalletInstalled(context);
     }
 
     @Override
