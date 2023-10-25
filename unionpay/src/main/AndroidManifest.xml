@@ -38,6 +38,7 @@
             android:name="com.unionpay.UPPayWapActivity"
             android:configChanges="orientation|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
+            android:exported="false"
             android:windowSoftInputMode="adjustResize"/>
         <!-- unionpay end -->
         <activity

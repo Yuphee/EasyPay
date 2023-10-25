@@ -1,13 +1,13 @@
 /*
-******************************* Copyright (c)*********************************\
-**
-**                 (c) Copyright 2017, King, china
-**                          All Rights Reserved
-**                                
-**                              By(King)
-**                         
-**------------------------------------------------------------------------------
-*/
+ ******************************* Copyright (c)*********************************\
+ **
+ **                 (c) Copyright 2017, King, china
+ **                          All Rights Reserved
+ **
+ **                              By(King)
+ **
+ **------------------------------------------------------------------------------
+ */
 package com.xgr.unionpay.unionpay;
 
 import android.app.Activity;
@@ -41,10 +41,11 @@ public class UnionPay implements IPayStrategy<UnionPayInfoImpli> {
 
     /**
      * 银联App是否安装
+     *
      * @param context
      */
-    public boolean isUnionAppInstalled(Context context){
-        return UPPayAssistEx.checkWalletInstalled(context);
+    public boolean isUnionAppInstalled(Context context) {
+        return UPPayAssistEx.checkWalletInstalled(context, null, null);
     }
 
     @Override
