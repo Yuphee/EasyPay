@@ -29,7 +29,8 @@ dependencies {
     })
     implementation 'com.android.support:appcompat-v7:27.+'
     testImplementation 'junit:junit:4.12'
-    api files('libs/alipaySdk-20180601.jar')
+    api 'com.alipay.sdk:alipaysdk-android:15.8.35@aar'
+//    api files('libs/alipaySdk-20180601.jar')
     //implementation(name: 'alipaySdk', ext: 'aar')
     compileOnly project(':easypay')
 }
